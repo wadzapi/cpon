@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'me.wadzapi'
+version = '0.1.0-SNAPSHOT'
+
+description = """vertx-conf-wadzapi"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+
+
+
+repositories {
+        
+     maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+     maven { url "https://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.github.mcollovati.vertx', name: 'vertx-vaadin8', version:'2.0.0'
+    compile group: 'com.github.mcollovati.vertx', name: 'vertx-vaadin-flow', version:'14.0.0'
+    compile group: 'org.scala-lang', name: 'scala-library', version:'2.12.6'
+    compile group: 'io.vertx', name: 'vertx-lang-scala_2.12', version:'3.8.0'
+    compile group: 'io.vertx', name: 'vertx-web-scala_2.12', version:'3.8.0'
+    testCompile group: 'org.scalatest', name: 'scalatest_2.12', version:'3.0.1'
+    compileOnly group: 'io.vertx', name: 'vertx-codegen', version:'3.8.0'
+}

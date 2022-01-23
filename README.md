@@ -45,3 +45,10 @@ docker run -p 8666:8666 default/vertx-scala
 ```
 
 Point your browser to [http://127.0.0.1:8666/hello](http://127.0.0.1:8666/hello) and enjoy :)
+java -jar target/scala-2.12/vertx-conf-wadzapi-assembly-0.1.0-SNAPSHOT.jar
+
+      Succeeded in deploying verticle
+
+http://localhost:8666/hello
+      world
+https://vertx.io/blog/scala-is-here/
